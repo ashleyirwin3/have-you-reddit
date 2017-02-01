@@ -2,6 +2,30 @@ body {
   background-color: teal;
 }
 
-.breadcrumbs {
-  text-align: right;
+h1 {
+  color: white;
+  text-align: center;
+}
+
+#postBox {
+  background-color: white;
+  color: blue;
+}
+ul {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+i {
+  color: red;
+}
+
+button {
+  padding-right: 15px;
+  
 }

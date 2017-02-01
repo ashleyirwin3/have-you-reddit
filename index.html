@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <meta charset="UTF-8">
-        <title>Reddit</title>
-        <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body ng-app="redditApp">
-  <div class="container">
-      <div ng-view>
-  </div>
+  <head>
+    <meta charset="UTF-8">
+    <title>Reddit</title>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+
+  <body ng-app="redditApp">
+    <div class="container">
+      <h1>Have You <i>Reddit?!</i></h1>
+        <div ng-view>
+          <section id="postBox">
+            <ul>
+              <li><button>Cool!</button><button>Lame!</button><a href="#">Post 1: Title - URL - img - posted by [username]</li>
+              <li><button>Cool!</button><button>Lame!</button><a href="#">Post 2: Title - URL - img - posted by [username]</li>
+              <li><button>Cool!</button><button>Lame!</button><a href="#">Post 3: Title - URL - img - posted by [username]</li>
+              <li><button>Cool!</button><button>Lame!</button><a href="#">Post 4: Title - URL - img - posted by [username]</li>
+              <li><button>Cool!</button><button>Lame!</button><a href="#">Post 5: Title - URL - img - posted by [username]</li>
+            </ul>
+          </section>
 </div>
 
 <script src="/bower_components/jquery/dist/jquery.min.js"></script>
@@ -21,5 +31,7 @@
 <script src="app/controllers/home.js"></script>
 <script src="app/controllers/newpost.js"></script>
 
-</body>
+        </div>
+    </div>
+  </body>
 </html>
