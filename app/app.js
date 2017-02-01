@@ -40,7 +40,8 @@ app.config(function ($routeProvider, $locationProvider){
     })
     .when('/register', {
       controller: 'RegisterCtrl',
-      templateUrl: '/partials/register.html'
+      templateUrl: '/partials/register.html',
+    })
     .when('/newpost', {
       controller: 'NewpostCtrl',
       templateUrl: '/partials/newpost.html'
