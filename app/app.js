@@ -9,4 +9,8 @@ app.config(($routeProvider, $locationProvider) => {
       controller: 'HomeCtrl',
       templateUrl: '/partials/home.html',
     })
+    .when('/newpost', {
+      controller: 'NewpostCtrl',
+      templateUrl: '/partials/newpost.html'
+    })
 })
