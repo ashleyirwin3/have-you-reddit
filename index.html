@@ -9,10 +9,20 @@
 
   <body ng-app="redditApp">
     <div class="container">
-      <h1>Have You <i>Reddit?!</i></h1>
-        <div ng-view>
-          <section id="postBox">
-            <ul>
+      <nav class="col-md-12 text-center">
+      <ol class="breadcrumb">
+      <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+        <li class="breadcrumb-item"><a href="#">Login</a></li>
+        <li class="breadcrumb-item"><a href="#">Logout</a></li>
+        <li class="breadcrumb-item"><a href="#">Register</a></li>
+        <button type="button" class="btn btn-warning btn-lg pull-right">New Post</button>
+     </ol>
+          </ul>
+          <!-- <button type="button" class="btn btn-warning btn-lg pull-right">New Post</button> -->
+          </nav>
+            <div ng-view>
+              <section id="postBox">
+                <ul>
               <li><button>Cool!</button><button>Lame!</button><a href="#">Post 1: Title - URL - img - posted by [username]</li>
               <li><button>Cool!</button><button>Lame!</button><a href="#">Post 2: Title - URL - img - posted by [username]</li>
               <li><button>Cool!</button><button>Lame!</button><a href="#">Post 3: Title - URL - img - posted by [username]</li>
