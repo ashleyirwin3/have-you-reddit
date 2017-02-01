@@ -45,5 +45,8 @@ app.config(function ($routeProvider, $locationProvider){
       controller: 'NewpostCtrl',
       templateUrl: '/partials/newpost.html'
     })
+    .otherwise({
+      redirectTo: ('/')
+    })
   })
 })
