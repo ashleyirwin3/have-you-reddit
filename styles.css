@@ -1,7 +1,6 @@
 body {
-  background-color: teal;
+  background-color: lightgrey;
 }
-
 h1 {
   color: white;
   text-align: center;
@@ -27,5 +26,18 @@ i {
 
 button {
   padding-right: 15px;
-  
+
+}
+
+.center-pills {
+  display: inline-block;
+}
+
+.btn-warning {
+  display: right;
+}
+
+.newPostForm {
+  width: 50%;
+  margin: auto;
 }
