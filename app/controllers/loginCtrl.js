@@ -6,4 +6,4 @@ app.controller("LoginCtrl", function($scope, $location, AuthFactory){
       $scope.$apply();
     });
 
-  });
+});
