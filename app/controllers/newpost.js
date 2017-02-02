@@ -1,6 +1,3 @@
-console.log('new post ctrl')
-
-app.controller('NewpostCtrl', function($scope, $location, AuthFactory){
-  $scope.post = () => AuthFactory
-    .post()
+console.log('new post controller')
+app.controller('NewpostCtrl', function($scope) {
 })
