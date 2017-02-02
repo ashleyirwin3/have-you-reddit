@@ -12,14 +12,18 @@
       <nav class="col-md-12 text-center">
       <ol class="breadcrumb">
       <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
-        <li class="breadcrumb-item"><a href="#">Login</a></li>
-        <li class="breadcrumb-item"><a href="#">Logout</a></li>
+        <li class="breadcrumb-item"><a href="#/login/">Login</a></li>
+        <li class="breadcrumb-item"><a href="#/home">Logout</a></li>
         <li class="breadcrumb-item"><a href="#">Register</a></li>
-        <button type="button" class="btn btn-warning btn-lg pull-right">New Post</button>
+        <button a href="#/newpost/" type="button" class="btn btn-warning btn-lg pull-right">New Post</button>
      </ol>
           </ul>
           <!-- <button type="button" class="btn btn-warning btn-lg pull-right">New Post</button> -->
           </nav>
+          <div ng-view>
+          <section id="postBox">
+            <ul>
+
             <div ng-view>
               <section id="postBox">
                 <ul>
