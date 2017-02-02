@@ -13,10 +13,10 @@
       return $q.resolve(firebase.auth().signOut())
      },
 
-     getUserId () {
-       return firebase.auth().currentUser.uid;
-       console.log(currentUser.uid);
-     },
+     // getUserId () {
+     //   return firebase.auth().currentUser.uid;
+     //   console.log(currentUser.uid);
+     // },
 
      register (email, pass) {
         return $q.resolve(firebase.auth().createUserWithEmailAndPassword(email, pass))

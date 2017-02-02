@@ -1,5 +1,6 @@
-console.log('new post ctrl')
+console.log('new post controller');
 
-app.controller('NewpostCtrl', function() {
-  console.log('new post control')
+app.controller('NewpostCtrl', function($scope, $q, $location) {
+  .then(() => {
+        $location.url('/newpost')
 })
