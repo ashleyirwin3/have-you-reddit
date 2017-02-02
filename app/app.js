@@ -29,7 +29,7 @@ app.config(function ($routeProvider, $locationProvider){
     })
     .when('/newpost', {
       controller: 'NewpostCtrl',
-      templateUrl: '/partials/newpost.html'
+      templateUrl: '/partials/newpost.html',
     })
     .otherwise({
       redirectTo: ('/')
