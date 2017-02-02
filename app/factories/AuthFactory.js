@@ -13,17 +13,17 @@
       return $q.resolve(firebase.auth().signOut())
      },
 
-     getUserId () {
-       return firebase.auth().currentUser.uid;
-       console.log(currentUser.uid);
-     },
+     // getUserId () {
+     //   return firebase.auth().currentUser.uid;
+     //   console.log(currentUser.uid);
+     // },
 
      register (email, pass) {
         return $q.resolve(firebase.auth().createUserWithEmailAndPassword(email, pass))
      },
 
-      // get user key name and post it to   users.json
-      // redo and use AuthFactory.getUserId() ????
+      // get user key name and post it to users.json
+      // redo and use AuthFactory.getUserId()
      putNewUserInFirebase () {
       var userId = firebase.auth().currentUser.uid
       var userEmail = firebase.auth().currentUser.email

@@ -2,34 +2,19 @@ console.log('testing')
 
 const app = angular.module('redditApp', ['ngRoute'])
 
-app.config(function ($routeProvider, $locationProvider){
-  $locationProvider.hashPrefix('');
-
-  // Initialize Firebase
-
-  firebase.initializeApp({
+  var config = {
     apiKey: "AIzaSyAtF6bMtPEHRtwgHBVlH9lhgZubrn-yiO0",
     authDomain: "have-you-reddit.firebaseapp.com",
     databaseURL: "https://have-you-reddit.firebaseio.com",
     storageBucket: "have-you-reddit.appspot.com",
     messagingSenderId: "1077173442347"
-  });
+  };
 
-// authorization
+firebase.initializeApp(config)
 
-  checkForAuth ($location) {
-        // http://stackoverflow.com/questions/37370224/firebase-stop-listening-onauthstatechanged
-        const authReady = firebase.auth().onAuthStateChanged(user => {
-          authReady()
-          if (!user) {
-            $location.url('/login')
-          }
-        })
-      }
-
-  // routing
-
-  $routeProvider
+app.config(function ($routeProvider, $locationProvider){
+  $locationProvider.hashPrefix('');
+    $routeProvider
     .when('/', {
       controller: 'HomeCtrl',
       templateUrl: '/partials/home.html',
@@ -44,10 +29,9 @@ app.config(function ($routeProvider, $locationProvider){
     })
     .when('/newpost', {
       controller: 'NewpostCtrl',
-      templateUrl: '/partials/newpost.html'
+      templateUrl: '/partials/newpost.html',
     })
     .otherwise({
       redirectTo: ('/')
     })
   })
-})
