@@ -36,8 +36,8 @@ app.config(function ($routeProvider, $locationProvider){
       templateUrl: '/partials/register.html',
     })
     .when('/posts', {
-      controller: `PostedCtrl`,
-      templateUrl: `/partials/posts.html`,
+      controller: 'PostedCtrl',
+      templateUrl: '/partials/posts.html',
     })
     .otherwise({
       redirectTo: ('/')
