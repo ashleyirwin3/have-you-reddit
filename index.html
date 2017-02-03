@@ -15,32 +15,34 @@
 
         <li class="breadcrumb-item"><a href="#/login/">Login</a></li>
         <li class="breadcrumb-item"><a href="#/home">Logout</a></li>
-        <li class="breadcrumb-item"><a href="#">Register</a></li>
+        <li class="breadcrumb-item"><a href="#/register">Register</a></li>
         <button type="button" class="btn btn-warning btn-lg pull-right"><a href="#/newpost">New Post</button>
-     </ol>
+      </ol>
           </ul>
           <!-- <button type="button" class="btn btn-warning btn-lg pull-right">New Post</button> -->
           </nav>
-          <div ng-view>
-          <section id="postBox">
+        <!--   <div ng-view>
+          <section id="postBox"> -->
             <ul>
             <div ng-view>
               <section id="postBox">
-                <ul>
-              <li><button>Cool!</button><button>Lame!</button><a href="#">Post 1: Title - URL - img - posted by [username]</li>
-              <li><button>Cool!</button><button>Lame!</button><a href="#">Post 2: Title - URL - img - posted by [username]</li>
-              <li><button>Cool!</button><button>Lame!</button><a href="#">Post 3: Title - URL - img - posted by [username]</li>
-              <li><button>Cool!</button><button>Lame!</button><a href="#">Post 4: Title - URL - img - posted by [username]</li>
-              <li><button>Cool!</button><button>Lame!</button><a href="#">Post 5: Title - URL - img - posted by [username]</li>
+              <ul>
+                <li><button>Cool!</button><button>Lame!</button><a href="#">Post 1: Title - URL - img {$scope.img} - posted by [username]</li>
+                <li><button>Cool!</button><button>Lame!</button><a href="#">Post 2: Title - URL - img - posted by [username]</li>
+                <li><button>Cool!</button><button>Lame!</button><a href="#">Post 3: Title - URL - img - posted by [username]</li>
+                <li><button>Cool!</button><button>Lame!</button><a href="#">Post 4: Title - URL - img - posted by [username]</li>
+                <li><button>Cool!</button><button>Lame!</button><a href="#">Post 5: Title - URL - img - posted by [username]</li>
             </ul>
           </section>
 </div>
 
+<!-- dependency scripts -->
 <script src="/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="/bower_components/angular/angular.min.js"></script>
 <script src="/bower_components/angular-route/angular-route.min.js"></script>
 <script src="/bower_components/firebase/firebase.js"></script>
+<!-- main app scripts -->
 <script src="app/app.js"></script>
 <script src="app/controllers/home.js"></script>
 <script src="app/controllers/newpost.js"></script>
