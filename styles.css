@@ -1,7 +1,43 @@
 body {
-  background-color: teal;
+  background-color: lightgrey;
+}
+h1 {
+  color: white;
+  text-align: center;
 }
 
-.breadcrumbs {
-  text-align: right;
+#postBox {
+  background-color: white;
+  color: blue;
+}
+ul {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+i {
+  color: red;
+}
+
+button {
+  padding-right: 15px;
+
+}
+
+.center-pills {
+  display: inline-block;
+}
+
+.btn-warning {
+  display: right;
+}
+
+.newPostForm {
+  width: 50%;
+  margin: auto;
 }
